@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Pages/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Mobile header -->
+    <div>
+      <div
+        class="lg:hidden z-50 fixed bg-white w-full flex items-center justify-between p-4 shadow-lg dark:border-zinc-700"
+      >
+        <img src="./Pages/logo.png" alt="Logo" />
+        <i
+          id="menuOpen"
+          class="fa-solid fa-bars cursor-pointer fa-xl"
+          onclick="toggleMenu()"
+        ></i>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-[-100%] h-full w-full bg-[#00113A] shadow-lg transition-transform duration-300"
+      >
+        <i
+          id="menuClose"
+          class="fa-solid text-white fa-xmark cursor-pointer mt-8 pl-5 fa-2xl hidden"
+          onclick="toggleMenu()"
+        ></i>
+        <ul class="p-4">
+          <li>
+            <a href="#" class="block text-2xl py-2 text-[#fff]">Schools</a>
+          </li>
+          <li>
+            <a href="#" class="block text-2xl py-2 text-[#fff]">Testimonials</a>
+          </li>
+          <li><a href="#" class="block text-2xl py-2 text-[#fff]">FAQs</a></li>
+          <li>
+            <a href="#" class="block text-2xl py-2 text-[#fff]">Contact us</a>
+          </li>
+        </ul>
+        <div class="flex flex-col items-center gap-5">
+          <button class="bg-blue-500 w-1/2 text-white px-8 py-2 rounded-md">
+            Get Started
+          </button>
+          <button
+            class="border w-1/2 border-zinc-300 text-white px-4 py-2 rounded-md"
+          >
+            Download Schedule
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop navigation -->
+    <nav class="p-3 bg-white fixed w-full">
+      <div
+        class="hidden lg:flex max-w-7xl mx-auto items-center justify-between dark:border-zinc-700"
+      >
+        <div class="flex items-center space-x-5">
+          <img src="./Pages/logo.png" alt="Logo" />
+          <div class="border text-yellow-400 h-12"></div>
+          <div class="flex items-center">
+            <img src="./Pages/helsinki.png" alt="" />
+          </div>
+        </div>
+        <div class="hidden lg:flex items-center space-x-2">
+          <button class="bg-blue-500 text-white px-8 py-2 rounded-md">
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-yellow-100 text-center p-3">
+      <p class="text-[#606060] font-[500] mt-16 leading-8">
+        Next Cohort Starts
+        <strong class="font-extrabold text-[#606060]">August 12, 2024</strong> -
+        Only 24 Spots Available! Admission Closes
+        <strong>12th July, 2024</strong>.
+      </p>
+      <p class="text-[#606060] font-[500] leading-8">
+        If You Would Like To Make Inquiries, You Can Talk To The Program Manager
+        By Clicking The
+        <strong class="text-[#A61818]">(Talk To Program Manager)</strong> Button
+        Below
+      </p>
+    </div>
+    <!--  -->
+    <div class="">
+      <div class="hero">
+        <div class="flex justify-center items-center inner-hero">
+          <img
+            class="purpledown lg:block hidden mt-10"
+            src="./Pages/purpledown.png"
+            alt=""
+          />
+
+          <img class="hero-image" src="./Pages/icons/Frame 10.png" alt="" />
+          <img
+            class="purpledown lg:block hidden mt-10"
+            src="./Pages/pinkdown.png"
+            alt=""
+          />
+        </div>
+        <div class="text-center mt-[-50px]">
+          <h1
+            class="hero-text lg:text-[52px] 2xl:text-[64px] font-extrabold lg:leading-[84.4px] text-2xl mt-8 md:mt-4"
+          >
+            Get a Job in Tech, No Matter Your <br />
+            Background.
+          </h1>
+          <p
+            class="text-[#606060] capitalize text-lg font-[500] my-5 leading-8"
+          >
+            You don’t have to <strong class="text-[#F65873]">JAPA</strong>, You
+            can earn Dollars and Pounds right here in <br />
+            Nigeria as a Student, Working Class or Single Mom!
+          </p>
+        </div>
+        <div
+          class="flex lg:flex-row flex-col items-center justify-center space-y-5 lg:space-y-0 lg:space-x-5"
+        >
+          <button class="bg-[#4475F2] text-white p-3 px-9 font-bold rounded-lg">
+            Apply Now
+          </button>
+          <button class="bg-white text-[#4475F2] p-3 px-9 font-bold rounded-lg">
+            Talk to program manager
+          </button>
+        </div>
+        <div class="hidden md:flex justify-center mt-[-10px] md:gap-[320px]">
+          <img src="./Pages/purpleup.png" alt="" />
+          <img src="./Pages/pinkup.png" alt="" />
+        </div>
+      </div>
+      <div class="hero h-32"></div>
+      <div class="flex justify-center mt-[-100px]">
+        <img class="" src="../../Pages/youtube.png" alt="" />
+      </div>
+    </div>
+    <!--  -->
+    <div
+      class="mt-16 flex capitalize text-center text-[#606060] lg:max-w-5xl leading-10 text-[20px] font-medium mx-auto flex-col"
+    >
+      <p class="font-extrabold text-black text-[30px]">
+        <strong class="text-[#F37635]">Tech</strong> is the answer!!
+      </p>
+      <p>
+        Are you tired of your current job and looking for a way to earn more in
+        2025? Are you planning to relocate but need a skill that can earn you
+        more in Canada, US or UK? Are you a student seeking ways to start
+        earning legitimately on campus? Are you a single mom looking for ways to
+        work remotely, have more time to take <br />
+        care of your children?
+        <strong class="text-[#001D26]">then tech is the answer!!</strong>
+      </p>
+    </div>
+    <!--  -->
+    <div
+      class="flex max-w-7xl mx-auto justify-between mt-20 flex-col md:flex-row items-center bg-white"
+    >
+      <div class="w-full md:w-[40%] mb-5 md:mb-0">
+        <img class="rounded-lg" src="./Pages/answer.png" alt="Classroom" />
+      </div>
+      <div class="lg:w-[55%] text-center md:text-left">
+        <h2 class="text-3xl font-extrabold mb-5">
+          Acquire In-Demand Tech Skills At ITSkillsCenter
+        </h2>
+        <p class="font-normal lg:p-2 text-xl lg:w-[550px] text-[#606060] mb-4">
+          At Our Bootcamp, We Provide You With The Knowledge And Skills You Need
+          To Succeed In The Tech Industry, No Matter Your Background Or
+          Experience Level.
+        </p>
+        <h3
+          class="text-2xl lg:text-xl font-bold lg:font-normal text-[#4475F2] mb-2"
+        >
+          We Offer Both:
+        </h3>
+        <ul class="mb-4 flex flex-col lg:items-start items-center text-lg">
+          <div class="flex items-center space-x-10">
+            <li class="flex items-center mb-2">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/Vector.png"
+                class="w-4 h-4 mr-2"
+              />
+              Physical classes
+            </li>
+            <li class="flex items-center mb-2">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/Vector.png"
+                class="w-4 h-4 mr-2"
+              />
+              Online classes
+            </li>
+          </div>
+          <li class="flex items-center">
+            <img
+              aria-hidden="true"
+              alt="check"
+              src="./Pages/Vector.png"
+              class="w-4 h-4 mr-2"
+            />
+            Accommodation available for free
+          </li>
+        </ul>
+        <button
+          class="bg-[#0057FF] font-extrabold text-[#ffffff] p-3 px-9 rounded-lg"
+        >
+          Apply Now
+        </button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="my-10 mt-20">
+      <h2
+        class="text-2xl lg:text-[40px] font-extrabold lg:leading-[52.1px] text-[#070604] text-center"
+      >
+        Why Are We Different?
+      </h2>
+      <p class="hero-para mt-3 text-[20px] font-normal text-center">
+        Our Comprehensive, Hands-On Tech Training
+      </p>
+    </div>
+    <div class="lg:flex max-w-7xl mx-auto gap-10">
+      <div class="lg:w-[48%]">
+        <div class="bg-purple-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/trainingimage.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Expert Instructors</h4>
+              <p class="text-gray-500 break-words pt-2">
+                Our instructors bring over 12 years of combined industry
+                experience
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-pink-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/Time.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Job Placement</h4>
+              <p class="text-gray-500 break-words pt-2">
+                Receive job placement assistance, resume building, and interview
+                preparation to help you launch your tech career successfully.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="lg:w-[48%]">
+        <div class="bg-purple-50 lg:bg-pink-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/Plan.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Project-based training</h4>
+              <p class="text-gray-500 break-words pt-2">
+                Our curriculum is centered around real-world projects
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-pink-50 lg:bg-purple-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/exclusive.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Comprehensive Curriculum</h4>
+              <p class="text-gray-500 break-words pt-2">
+                Explore programming languages, web development, data science,
+                cybersecurity, and more to build a diverse skill set in tech.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="lg:flex max-w-7xl mx-auto gap-10">
+      <div class="lg:w-[48%]">
+        <div class="bg-purple-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/trainingimage.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Flexible Learning Modes</h4>
+              <p class="text-gray-500 break-words pt-2">
+                Choose between part-time online classes, physical classes in
+                Lagos, or our intensive bootcamp with full accommodation
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-pink-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/Time.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Group Projects</h4>
+              <p class="text-gray-500 break-words pt-2">
+                Work collaboratively with your peers on group projects that
+                simulate real-world scenarios
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-[48%]">
+        <div class="bg-purple-50 lg:bg-pink-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/Plan.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Community Engagement</h4>
+              <p class="text-gray-500 break-words pt-2">
+                You will Join a network of like-minded peers and mentors.
+                Collaborate on projects, share experiences, and grow together.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-pink-50 lg:bg-purple-50 rounded-lg">
+          <div
+            class="flex text-center lg:text-left gap-5 lg:h-48 flex-col lg:flex-row items-center lg:items-start mt-4 justify-center p-5 lg:py-8"
+          >
+            <div class="w-[15%]">
+              <img src="../../Pages/exclusive.png" alt="" />
+            </div>
+            <div class="trainig-text lg:w-[65%]">
+              <h4 class="text-2xl font-bold mb-3">Capstone Phase</h4>
+              <p class="text-gray-500 break-words pt-2">
+                During the final two weeks, you'll work on a capstone project, a
+                real-world project that showcases your skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="flex flex-col items-center mt-20">
+      <div class="my-10 lg:w-[931px]">
+        <h2
+          class="text-2xl lg:text-[40px] font-extrabold lg:leading-[52.1px] text-[#070604] text-center"
+        >
+          Over 400 graduates since 2020, with 62% having no prior experience in
+          tech.
+        </h2>
+        <p class="hero-para 2xl:px-20 mt-3 text-[20px] font-normal text-center">
+          Our alumni work at top tech companies, earning competitive salaries
+          and thriving in their new careers.
+        </p>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="flex flex-wrap justify-center gap-4 p-4">
+      <div class="relative">
+        <img
+          src="./Pages/joshua.png"
+          alt="Joshua Peter"
+          class="w-full h-full object-cover rounded-lg"
+        />
+        <!-- <div
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg"
+        >
+          <h3 class="font-bold">Joshua Peter - Mobile Engineer</h3>
+          <p>TBC USA</p>
+        </div> -->
+      </div>
+      <div class="relative">
+        <img
+          src="./Pages/pelumi.png"
+          alt="Pelumi Adefoye"
+          class="w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 px-5 rounded-lg"
+        >
+          <h3 class="font-bold">Pelumi Adefoye - Frontend Dev</h3>
+          <p>Edustipend</p>
+        </div>
+      </div>
+      <div class="relative">
+        <img
+          src="./Pages/nneka.png"
+          alt="Ezeoma Nneka"
+          class="w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 px-5 rounded-lg"
+        >
+          <h3 class="font-bold">Ezeoma Nneka - Mobile Engineer</h3>
+          <p>Torilo</p>
+        </div>
+      </div>
+      <div class="relative">
+        <img
+          src="./Pages/samuel.png"
+          alt="Samuel Ortil"
+          class="w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 px-5 rounded-lg"
+        >
+          <h3 class="font-bold">Samuel Ortil - Backend Engineer</h3>
+          <p>Zoracom</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="max-w-7xl my-10 mx-auto lg:px-3">
+      <div class="text">
+        <h2 class="hero-text md:text-46px lg:leading-62.1px text-center">
+          Our Tech Schools
+        </h2>
+        <p class="hero-para my-6 text-20px text-center">
+          With a live, immersive Bootcamp, you can jump-start or accelerate
+          <br />
+          your career in digital technology.
+        </p>
+      </div>
+      <div class="flex">
+        <div
+          class="cursor-pointer transition-all duration-800"
+          onclick="togglePage(1)"
+        >
+          <h4 id="page-1" class="active">
+            <span class="text-[20px] font-bold leading-10">Coding Courses</span>
+          </h4>
+          <div id="rect-1" class="rectangle-blue"></div>
+        </div>
+        <div class="grey"></div>
+        <div class="cursor-pointer" onclick="togglePage(2)">
+          <h4 id="page-2" class="inactive">
+            <span class="text-[20px] font-bold leading-10"
+              >Non Coding Courses</span
+            >
+          </h4>
+          <div id="rect-2" class="rectangle-grey"></div>
+        </div>
+        <div class="greylong"></div>
+      </div>
+      <div class="py-6">
+        <div id="content-1">
+          <div class="container software-components flex gap-12">
+            <div class="software-container">
+              <img class="frontend" src="../../Pages/frontend.png" alt="" />
+              <p class="text-2xl font-bold mt-3">Front-End Developer</p>
+              <p class="hero-para">
+                React / NextJS <span class="dot">•</span> 8 weeks
+              </p>
+            </div>
+            <div class="software-container">
+              <img class="frontend" src="../../Pages/backend.png" alt="" />
+              <p class="text-2xl font-bold mt-3">Back-End Developer</p>
+              <p class="hero-para">
+                Javascript, NodeJS <span class="dot">•</span> 8 weeks
+              </p>
+            </div>
+            <div class="software-container">
+              <img class="frontend" src="../../Pages/fullstack.png" alt="" />
+              <p class="text-2xl font-bold mt-3">Full-Stack Developer</p>
+              <p class="hero-para">
+                React / NextJS / NodeJS <span class="dot">•</span> 14 weeks
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="content-2" class="hidden">
+          <div class="container product-container">
+            <div class="uiux">
+              <img src="../../Pages/datascience.png" alt="" />
+              <p class="text-2xl font-bold mt-3">Data Science</p>
+              <p class="hero-para">Python <span class="dot">•</span> 8 weeks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Pages/index.js"></script>
+  </body>
+</html>
