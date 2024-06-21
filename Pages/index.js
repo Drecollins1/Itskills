@@ -1,23 +1,5 @@
-function togglePage(isOnline) {
-  document.getElementById("onlinePage").style.display = isOnline
-    ? "block"
-    : "none";
-  document.getElementById("offlinePage").style.display = isOnline
-    ? "none"
-    : "block";
-  document
-    .getElementById("onlineButton")
-    .classList.toggle("bg-blue-50", !isOnline);
-  document
-    .getElementById("onlineButton")
-    .classList.toggle("bg-white", isOnline);
-  document
-    .getElementById("offlineButton")
-    .classList.toggle("bg-blue-50", isOnline);
-  document
-    .getElementById("offlineButton")
-    .classList.toggle("bg-white", !isOnline);
-}
+
+// 
 
 document.addEventListener("DOMContentLoaded", () => toggleAccordion(1));
 
@@ -31,6 +13,8 @@ function toggleAccordion(id) {
     }
   });
 
+  // 
+
   const icons = document.querySelectorAll('[id^="icon"]');
   icons.forEach((icon) => {
     if (icon.id === `icon${id}`) {
@@ -41,6 +25,8 @@ function toggleAccordion(id) {
   });
 }
 
+
+// 
 const menuOpenIcon = document.getElementById("menuOpen");
 const menuCloseIcon = document.getElementById("menuClose");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -54,6 +40,9 @@ function toggleMenu() {
     mobileMenu.style.right = "0px";
   }
 }
+// 
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
   // Initially show the content of the first FAQ
@@ -79,13 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
+// 
 document.addEventListener("DOMContentLoaded", () => {
   let currentPage = 1;
 
   const togglePage = (pageNumber) => {
-    currentPage = pageNumber;
-    updateContent();
+    if (currentPage !== pageNumber) {
+      currentPage = pageNumber;
+      updateContent();
+    }
   };
 
   const updateContent = () => {
@@ -93,15 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById(`page-${i}`).classList.remove("active");
       document.getElementById(`page-${i}`).classList.add("inactive");
       document.getElementById(`rect-${i}`).classList.remove("rectangle-blue");
-      document.getElementById(`rect-${i}`).classList.add(`rectangle-grey${i === 1 ? "one" : "four"}`);
+      document.getElementById(`rect-${i}`).classList.add("rectangle-grey");
+      document.getElementById(`content-${i}`).classList.remove("show");
       document.getElementById(`content-${i}`).classList.add("hidden");
     }
 
     document.getElementById(`page-${currentPage}`).classList.remove("inactive");
     document.getElementById(`page-${currentPage}`).classList.add("active");
-    document.getElementById(`rect-${currentPage}`).classList.remove(`rectangle-grey${currentPage === 1 ? "one" : "four"}`);
+    document.getElementById(`rect-${currentPage}`).classList.remove("rectangle-grey");
     document.getElementById(`rect-${currentPage}`).classList.add("rectangle-blue");
     document.getElementById(`content-${currentPage}`).classList.remove("hidden");
+
+    setTimeout(() => {
+      document.getElementById(`content-${currentPage}`).classList.add("show");
+    }, 10);
   };
 
   window.togglePage = togglePage;

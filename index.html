@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Pages/style.css">
+    <link rel="stylesheet" href="./Pages/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -62,7 +62,7 @@
     </div>
 
     <!-- Desktop navigation -->
-    <nav class="p-3 bg-white fixed w-full">
+    <nav class="p-3 bg-white z-50 fixed w-full">
       <div
         class="hidden lg:flex max-w-7xl mx-auto items-center justify-between dark:border-zinc-700"
       >
@@ -394,7 +394,7 @@
     </div>
 
     <!--  -->
-    <div class="flex flex-wrap justify-center gap-4 p-4">
+    <div class="flex flex-wrap justify-center gap-4 lg:p-4">
       <div class="relative">
         <img
           src="./Pages/joshua.png"
@@ -448,16 +448,18 @@
         </div>
       </div>
     </div>
+  
+
     <!--  -->
 
-    <div class="max-w-7xl my-10 mx-auto lg:px-3">
-      <div class="text">
-        <h2 class="hero-text md:text-46px lg:leading-62.1px text-center">
+    <div class="max-w-7xl hidden lg:block my-20 mx-auto lg:px-3">
+      <div class="">
+        <h2 class="hero-text md:text-[52px] font-extrabold lg:leading-62.1px text-center">
           Our Tech Schools
         </h2>
-        <p class="hero-para my-6 text-20px text-center">
+        <p class="text-[#606060] text-center w-1/2 mx-auto capitalize text-lg font-[500] my-5 leading-8">
           With a live, immersive Bootcamp, you can jump-start or accelerate
-          <br />
+     
           your career in digital technology.
         </p>
       </div>
@@ -488,38 +490,273 @@
             <div class="software-container">
               <img class="frontend" src="../../Pages/frontend.png" alt="" />
               <p class="text-2xl font-bold mt-3">Front-End Developer</p>
-              <p class="hero-para">
-                React / NextJS <span class="dot">•</span> 8 weeks
+              <p class="hero-para text-[#606060]">
+                React / NextJS <span class="mx-3">•</span> 3 Months
               </p>
             </div>
             <div class="software-container">
               <img class="frontend" src="../../Pages/backend.png" alt="" />
               <p class="text-2xl font-bold mt-3">Back-End Developer</p>
-              <p class="hero-para">
-                Javascript, NodeJS <span class="dot">•</span> 8 weeks
+              <p class="hero-para text-[#606060]">
+                Javascript, NodeJS <span class="mx-3">•</span> 3 Months
               </p>
             </div>
             <div class="software-container">
               <img class="frontend" src="../../Pages/fullstack.png" alt="" />
               <p class="text-2xl font-bold mt-3">Full-Stack Developer</p>
-              <p class="hero-para">
-                React / NextJS / NodeJS <span class="dot">•</span> 14 weeks
+              <p class="hero-para text-[#606060]">
+                React / NextJS / NodeJS <span class="mx-3">•</span> 6 Months
               </p>
             </div>
           </div>
         </div>
         <div id="content-2" class="hidden">
-          <div class="container product-container">
-            <div class="uiux">
-              <img src="../../Pages/datascience.png" alt="" />
-              <p class="text-2xl font-bold mt-3">Data Science</p>
-              <p class="hero-para">Python <span class="dot">•</span> 8 weeks</p>
+          <p
+            class="text-[#606060] capitalize w-[70%] text-lg font-[500] my-8 leading-8"
+          >
+            Coding Is Not The Only Skill In Tech, Not Everyone Must Learn
+            Coding, There Are So Many Options That You Don't Have To Learn
+            Coding If You Are Not Interested In Coding. You Can Try Other Easier
+            Options That Make As Much Money As Coding.
+          </p>
+          <!--  -->
+          <div class="">
+            <div class="flex">
+              <div class="container product-container">
+                <div class="uiux">
+                  <img src="../../Pages/uiux.png" alt="" />
+                  <p class="text-2xl font-bold mt-3">UI/UX Design</p>
+                  <p class="hero-para text-[#606060]">
+                    Design With FIgma <span class="mx-3">•</span> 8 weeks
+                  </p>
+                </div>
+              </div>
+              <div class="container product-container">
+                <div class="uiux">
+                  <img src="../../Pages/softtesting.png" alt="" />
+                  <p class="text-2xl font-bold mt-3">Software Testing</p>
+                  <p class="hero-para text-[#606060]">
+                    Cypress + Automation <span class="mx-3">•</span> 8 weeks
+                  </p>
+                </div>
+              </div>
+              <div class="container product-container">
+                <div class="uiux">
+                  <img src="../../Pages/product.png" alt="" />
+                  <p class="text-2xl font-bold mt-3">Product Management</p>
+                  <p class="hero-para text-[#606060]">
+                    Learn About Product <span class="mx-3">•</span> 8 weeks
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex mt-10">
+              <div class="container product-container">
+                <div class="uiux">
+                  <img src="../../Pages/datascience.png" alt="" />
+                  <p class="text-2xl font-bold mt-3">Data Science</p>
+                  <p class="hero-para text-[#606060]">
+                    Python <span class="mx-3">•</span> 12 weeks
+                  </p>
+                </div>
+              </div>
+              <div class="container product-container">
+                <div class="uiux">
+                  <img src="../../Pages/cyber.png" alt="" />
+                  <p class="text-2xl font-bold mt-3">cybersecurity</p>
+                  <p class="hero-para text-[#606060]">
+                    Network Security (IDS/IPS) <span class="mx-3">•</span> 16
+                    weeks
+                  </p>
+                </div>
+              </div>
+              <div class="container product-container">
+                <div class="uiux">
+                  <img src="../../Pages/ai.png" alt="" />
+                  <p class="text-2xl font-bold mt-3">AI/ML</p>
+                  <p class="hero-para text-[#606060]">
+                    Python <span class="mx-3">•</span> 16 weeks
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!--  -->
+    <div class="timeline lg:h-[90vh] flex flex-col items-center justify-center my-20">
+      <div
+        class="flex max-w-7xl justify-between mx-auto flex-col md:flex-row text-white p-6 space-y-6 md:space-y-0 md:space-x-6"
+      >
+        <div class="lg:w-[40%] space-y-10 relative">
+          <!-- Vertical line
+          <div
+            class="absolute hidden lg:block top-0 bottom-0 md:top-8 md:bottom-20 left-6 w-0.5 bg-zinc-700"
+          >
+            <div class="absolute top-0 w-12 h-1 bg-transparent"></div>
+            <div class="absolute top-1/4 w-12 h-12 bg-transparent"></div>
+            <div class="absolute top-1/2 w-12 h-12 bg-transparent"></div>
+            <div class="absolute top-3/4 w-12 h-12 bg-transparent"></div>
+            <div class="absolute bottom-0 w-12 h-12 bg-transparent"></div>
+          </div> -->
+    
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-transparent  border rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold relative"
+            >
+              1
+            </div>
+            <div>
+              <h2 class="font-bold text-lg">Foundational Class</h2>
+              <p>Introduction to our curriculum. Takes 2 Weeks</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+            >
+              2
+            </div>
+            <div>
+              <h2 class="font-bold text-lg">Take Assessment</h2>
+              <p>
+                Pass our foundational class assessment to secure your spot.
+                Duration 2 Weeks
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+            >
+              3
+            </div>
+            <div>
+              <h2 class="font-bold text-lg">Admission & Training Proper</h2>
+              <p>
+                Attend the Training for the course duration. Duration depends on
+                course
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+            >
+              4
+            </div>
+            <div>
+              <h2 class="font-bold text-lg">Capstone & Graduation</h2>
+              <p>
+                Complete your capstone projects and attend job interviews with
+                tech partners.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+            >
+              5
+            </div>
+            <div>
+              <h2 class="font-bold text-lg">Secure Job Placement</h2>
+              <p>
+                Job placement assistance available for all completed courses
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class=" lg:w-[40%] timebg border-2  p-6 rounded-lg">
+          <h2 class="font-bold text-lg mb-4">
+            The Actual Cost Breakdown Of The Value We Are Giving To You:
+          </h2>
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Accommodation is worth 400k</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Certificate from Harvard - 5m</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Certificate from University of Helsinki - 5m</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>High Speed internet - Starlink provision - 500k</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Steady Power supply for course duration - 300k</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Alumni Network - 300k</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Career Coaching - 300k</span>
+            </li>
+            <li class="flex items-center space-x-5">
+              <img
+                aria-hidden="true"
+                alt="check"
+                src="./Pages/fff.png"
+              />
+              <span>Job Placement support - 500k</span>
+            </li>
+          </ul>
+          <div
+            class="flex justify-between items-center mt-4 pt-4 border-t border-white"
+          >
+            <span class="font-bold">Total</span>
+            <span class="font-bold">11.5m</span>
+          </div>
+          <p class="mt-4">
+            The Total Value Of What We Are Giving Is Worth 11.5m But You Are
+            Only Going To Pay
+            <span class="text-green-500 text-xl font-[900]">500k</span> For A Limited
+            Period.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+<p class="mt"></p>
     <script src="./Pages/index.js"></script>
   </body>
 </html>

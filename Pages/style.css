@@ -54,69 +54,78 @@
   background: rgba(0, 17, 58, 1);
 }
 
-
 /*  */
-.rectangle-blue {
-  width: 150px;
-  height: 6px;
-  background-color: blue;
-  margin-top: 10px;
+/* Other CSS rules... */
 
-  /* margin-bottom: 10px;  */
-}
-.rectangle-bluetwo {
-  width: 145px;
+/* Rectangles */
+.rectangle-blue {
+  width: 200px;
   height: 6px;
   background-color: blue;
-  /* margin-bottom: 10px;  */
   margin-top: 10px;
-}
-.rectangle-bluethree {
-  width: 225px;
-  height: 6px;
-  background-color: blue;
-  /* margin-bottom: 10px;  */
-  margin-top: 10px;
-}
-.rectangle-bluefour {
-  width: 120px;
-  height: 6px;
-  background-color: blue;
-  /* margin-bottom: 10px;  */
-  margin-top: 10px;
+  transition: background-color 0.8s, width 0.8s;
 }
 
 .rectangle-grey {
-  width: 150px;
+  width: 200px;
   height: 6px;
   background-color: rgba(68, 82, 213, 0.126);
-  /* margin-bottom: 5px;  */
-  /* margin-left: -20px; */
   margin-top: 10px;
+  transition: background-color 0.8s, width 0.8s;
 }
 
-
-.rectangle-greytwo {
-  width: 145px;
-  height: 6px;
-  margin-top: 10px;
-
-  background-color: rgba(68, 82, 213, 0.126);
-  /* margin-bottom: 5px;  */
-  /* margin-left: -20px; */
+/* Active and inactive styles */
+.active span {
+  /* color: blue; */
+  transition: color 0.8s;
 }
+
+.inactive span {
+  color: rgba(192, 192, 193, 1);
+  transition: color 0.8s;
+}
+
+/* Grey divider */
 .grey {
   background-color: rgba(68, 82, 213, 0.126);
   width: 40px;
   height: 6px;
   margin-top: 50px;
 }
+
 .greylong {
   background-color: rgba(68, 82, 213, 0.126);
-  width: 365px;
+  width: 100%;
   height: 6px;
   margin-top: 50px;
 }
-.inactive {
-  color: rgba(192, 192, 193, 1);
+
+/* Content transition */
+.content {
+  opacity: 0;
+  transition: opacity 0.8s, transform 0.8s;
+  transform: translateY(20px);
+}
+
+.content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+.timeline {
+  background: linear-gradient(rgba(16, 2, 1, 0.76), rgba(16, 2, 1, 0.76)),
+    url("./timeline.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.timebg{
+  /* background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)); */
+  
+
+  background: #FFFFFF80;
+
 }
