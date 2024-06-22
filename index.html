@@ -11,13 +11,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- Mobile header -->
     <div>
       <div
-        class="lg:hidden z-50 fixed bg-white w-full flex items-center justify-between p-4 shadow-lg dark:border-zinc-700"
+        class="lg:hidden z-50 fixed bg-white w-full flex items-center justify-between p-5"
       >
         <img src="./Pages/logo.png" alt="Logo" />
         <i
@@ -29,7 +34,7 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="fixed top-0 right-[-100%] h-full w-full bg-[#00113A] shadow-lg transition-transform duration-300"
+        class="fixed z-50 top-0 right-[-100%] h-full w-full bg-[#00113A] shadow-lg transition-transform duration-300"
       >
         <i
           id="menuClose"
@@ -62,7 +67,7 @@
     </div>
 
     <!-- Desktop navigation -->
-    <nav class="p-3 bg-white z-50 fixed w-full">
+    <nav class="p-3 hidden lg:block bg-white z-50 fixed w-full">
       <div
         class="hidden lg:flex max-w-7xl mx-auto items-center justify-between dark:border-zinc-700"
       >
@@ -394,7 +399,7 @@
     </div>
 
     <!--  -->
-    <div class="flex flex-wrap justify-center gap-4 lg:p-4">
+    <div class="flex flex-col lg:flex-row mt-10 justify-center gap-4 p-4">
       <div class="relative">
         <img
           src="./Pages/joshua.png"
@@ -410,15 +415,15 @@
       </div>
       <div class="relative">
         <img
-          src="./Pages/pelumi.png"
+          src="./Pages/pelumi2.png"
           alt="Pelumi Adefoye"
           class="w-full h-full object-cover rounded-lg"
         />
         <div
-          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 px-5 rounded-lg"
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg"
         >
           <h3 class="font-bold">Pelumi Adefoye - Frontend Dev</h3>
-          <p>Edustipend</p>
+          <p>Eduspend</p>
         </div>
       </div>
       <div class="relative">
@@ -428,39 +433,41 @@
           class="w-full h-full object-cover rounded-lg"
         />
         <div
-          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 px-5 rounded-lg"
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg"
         >
           <h3 class="font-bold">Ezeoma Nneka - Mobile Engineer</h3>
-          <p>Torilo</p>
+          <p>Tarilo</p>
         </div>
       </div>
       <div class="relative">
         <img
-          src="./Pages/samuel.png"
+          src="./Pages/samuel2.png"
           alt="Samuel Ortil"
           class="w-full h-full object-cover rounded-lg"
         />
         <div
-          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 px-5 rounded-lg"
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg"
         >
           <h3 class="font-bold">Samuel Ortil - Backend Engineer</h3>
           <p>Zoracom</p>
         </div>
       </div>
     </div>
-  
 
     <!--  -->
 
     <div class="max-w-7xl hidden lg:block my-20 mx-auto lg:px-3">
       <div class="">
-        <h2 class="hero-text md:text-[52px] font-extrabold lg:leading-62.1px text-center">
+        <h2
+          class="hero-text md:text-[52px] font-extrabold lg:leading-62.1px text-center"
+        >
           Our Tech Schools
         </h2>
-        <p class="text-[#606060] text-center w-1/2 mx-auto capitalize text-lg font-[500] my-5 leading-8">
-          With a live, immersive Bootcamp, you can jump-start or accelerate
-     
-          your career in digital technology.
+        <p
+          class="text-[#606060] text-center w-1/2 mx-auto capitalize text-lg font-[500] my-5 leading-8"
+        >
+          With a live, immersive Bootcamp, you can jump-start or accelerate your
+          career in digital technology.
         </p>
       </div>
       <div class="flex">
@@ -586,7 +593,9 @@
     </div>
 
     <!--  -->
-    <div class="timeline lg:h-[90vh] flex flex-col items-center justify-center my-20">
+    <div
+      class="timeline lg:h-[90vh] flex flex-col items-center justify-center my-20"
+    >
       <div
         class="flex max-w-7xl justify-between mx-auto flex-col md:flex-row text-white p-6 space-y-6 md:space-y-0 md:space-x-6"
       >
@@ -601,10 +610,10 @@
             <div class="absolute top-3/4 w-12 h-12 bg-transparent"></div>
             <div class="absolute bottom-0 w-12 h-12 bg-transparent"></div>
           </div> -->
-    
+
           <div class="flex items-center space-x-4">
             <div
-              class="bg-transparent  border rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold relative"
+              class="bg-transparent border rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold relative"
             >
               1
             </div>
@@ -669,94 +678,730 @@
             </div>
           </div>
         </div>
-    
-        <div class=" lg:w-[40%] timebg border-2  p-6 rounded-lg">
+        <!--  -->
+        <div class="lg:w-[40%] timebg border-2 p-6 rounded-lg">
           <h2 class="font-bold text-lg mb-4">
             The Actual Cost Breakdown Of The Value We Are Giving To You:
           </h2>
           <ul class="space-y-2">
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Accommodation is worth 400k</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Certificate from Harvard - 5m</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Certificate from University of Helsinki - 5m</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>High Speed internet - Starlink provision - 500k</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Steady Power supply for course duration - 300k</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Alumni Network - 300k</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Career Coaching - 300k</span>
             </li>
-            <li class="flex items-center space-x-5">
-              <img
-                aria-hidden="true"
-                alt="check"
-                src="./Pages/fff.png"
-              />
+            <li class="flex items-center space-x-5 font-bold">
+              <img aria-hidden="true" alt="check" src="./Pages/fff.png" />
               <span>Job Placement support - 500k</span>
             </li>
           </ul>
           <div
-            class="flex justify-between items-center mt-4 pt-4 border-t border-white"
+            class="flex font-semibold justify-between items-center mt-4 pt-4 border-t border-white"
           >
             <span class="font-bold">Total</span>
             <span class="font-bold">11.5m</span>
           </div>
-          <p class="mt-4">
+          <p class="mt-4 font-bold">
             The Total Value Of What We Are Giving Is Worth 11.5m But You Are
             Only Going To Pay
-            <span class="text-green-500 text-xl font-[900]">500k</span> For A Limited
-            Period.
+            <span class="text-[#49F25A] text-xl font-[900]">500k</span> For A
+            Limited Period.
           </p>
         </div>
       </div>
     </div>
-    
-<p class="mt"></p>
+    <!--  -->
+    <div class="max-w-6xl mx-auto lg:p-0">
+      <h2 class="lg:text-4xl text-2xl px-5 font-extrabold text-center mb-8">
+        Why Should You Get Into Tech NOW?
+      </h2>
+
+      <div class="flex flex-col lg:flex-row gap-8 mt-10">
+        <div
+          class="flex lg:w-[60%] mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start space-x-6"
+        >
+          <div class="bg-blue-500 text-white p-3 rounded-full">
+            <img
+              aria-hidden="true"
+              alt="money-bag"
+              src="https://placehold.co/24x24"
+            />
+          </div>
+          <div class="w-[90%]">
+            <h3 class="font-bold text-xl lg:text-2xl">
+              Higher Earnings: Earn more now
+            </h3>
+            <p class="lg:text-xl text-2xl lg:w-[75%]">
+              Tech professionals earn significantly more than many other
+              professions.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex lg:w-[60%] justify-between mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start space-x-6"
+        >
+          <div class="bg-pink-500 text-white p-3 rounded-full">
+            <img
+              aria-hidden="true"
+              alt="home"
+              src="https://placehold.co/24x24"
+            />
+          </div>
+          <div>
+            <h3 class="font-bold text-xl lg:text-2xl">Work From Home</h3>
+            <p class="lg:text-xl text-2xl lg:w-[90%]">
+              Work from anywhere, even from your village, as long as you have a
+              laptop and internet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 mt-10">
+        <div
+          class="flex lg:w-[60%] mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start space-x-6"
+        >
+          <div class="bg-yellow-500 text-white p-3 rounded-full">
+            <img
+              aria-hidden="true"
+              alt="star"
+              src="https://placehold.co/24x24"
+            />
+          </div>
+          <div>
+            <h3 class="font-bold text-xl lg:text-2xl">
+              Future-Proof Your Career
+            </h3>
+            <p class="lg:text-xl text-2xl lg:w-[80%]">
+              Get the best of Jobs Available. Tech skills are essential across
+              all industries, ensuring job security and growth. You cannot be
+              without a job again for the rest of your life.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex lg:w-[60%] mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start space-x-6"
+        >
+          <div class="bg-purple-500 text-white p-3 rounded-full">
+            <img
+              aria-hidden="true"
+              alt="globe"
+              src="https://placehold.co/24x24"
+            />
+          </div>
+          <div>
+            <h3 class="font-bold text-xl lg:text-2xl">Global Opportunities</h3>
+            <p class="lg:text-xl text-2xl">
+              Work remotely for international companies or relocate with
+              in-demand skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- what people say about us -->
+    <div class="alumni my-10" id="testimonial">
+      <div class="max-w-7xl p-1 mx-auto">
+        <h2
+          class="hero-text mt-10 font-bold text-2xl md:text-[40px] lg:leading-[62.1px] text-center"
+        >
+          Words From Alumni
+        </h2>
+        <p class="hero-para my-3 text-[18px] text-center">
+          Here is what our students have to say
+        </p>
+        <div
+          class="lg:flex lg:space-y-0 mt-10 space-y-10 lg:gap-10 lg:py-10 lg:pb-20 lg:overflow-scroll alumnibg hide-scrollbar gap-5"
+        >
+          <div class="">
+            <div
+              class="lg:rounded-lg card flex-col lg:flex-row lg:items-start flex lg:w-[500px]"
+            >
+              <img src="./Pages/youtubeimage1.png" alt="" />
+            </div>
+          </div>
+          <div class="">
+            <div
+              class="lg:rounded-lg card flex-col lg:flex-row lg:items-start flex lg:w-[500px]"
+            >
+              <div class="">
+                <div
+                  class="lg:rounded-lg card flex-col lg:flex-row lg:items-start flex lg:w-[500px]"
+                >
+                  <img src="./Pages/youtubeimage2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div
+              class="lg:rounded-lg card flex-col lg:flex-row lg:items-start flex lg:w-[500px]"
+            >
+              <img src="./Pages/youtubeimage1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="max-w-7xl mx-auto py-8">
+      <div>
+        <h2
+          class="hero-text mt-10 font-extrabold text-3xl md:text-[40px] lg:leading-[52.1px] text-center"
+        >
+          Where Our Alumni Work
+        </h2>
+
+        <p class="hero-para font-bold mb-16 mt-2 text-[18px] text-center">
+          Trusted more than 30+ companies in nigeria
+        </p>
+
+        <div class="flex justify-between">
+          <div class="p-1 rounded-lg flex items-center justify-center">
+            <img src="./Pages/gomycode.png" alt="GOMYCODE" class="" />
+          </div>
+          <div class="p-1 rounded-lg flex items-center justify-center">
+            <img src="./Pages/ikeja.png" alt="Logo 2" class="" />
+          </div>
+          <div class="p-1 rounded-lg flex items-center justify-center">
+            <img src="./Pages/sterling.png" alt="Sterling" class="" />
+          </div>
+          <div class="p-1 rounded-lg flex items-center justify-center">
+            <img src="./Pages/uber.png" alt="UBER" class="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div
+      class="max-w-7xl mb-20 relative mx-auto mt-20 rounded-lg gradient text-white py-16 px-4 text-center"
+    >
+      <div>
+        <img class="absolute top-0 left-0" src="./Pages/shape.png" alt="" />
+        <img
+          class="absolute bottom-0 right-0"
+          src="./Pages/shape2.png"
+          alt=""
+        />
+      </div>
+      <h1 class="text-2xl md:text-4xl font-bold mb-4">
+        Unlock Your Tech Potential with ITSkillsCenter
+      </h1>
+      <p class="text-lg md:text-lg my-8 lg:w-[80%] mx-auto">
+        Imagine The Possibilities: Studying Abroad, Landing A Job With An
+        International Company, Or Even Starting Your Own Business. With Our Tech
+        Training, These Dreams Can Become Reality.
+      </p>
+      <button
+        class="orange hover:bg-orange-600 text-white font-semibold py-2 px-10 lg:px-16 rounded"
+      >
+        Apply Now
+      </button>
+    </div>
+    <!--  -->
+    <div
+      class="flex max-w-7xl mx-auto justify-between flex-col mt-20 lg:flex-row items-center lg:items-start p-6 space-y-6 lg:space-y-0"
+    >
+      <div class="lg:w-[45%] space-y-6">
+        <h2 class="text-2xl font-bold">Further Your Studies Abroad</h2>
+        <p class="text-lg leading-10 text-justify lg:w-[85%]">
+          We Have Partnership With Schools In Dubai, US, UK. Our Program Opens
+          Doors To Prestigious Institutions Around The World. With Tech Skills
+          Under Your Belt, You Can Pursue Further Studies In Top Destinations
+          Like Dubai, Canada, The United States, Australia, Or The United
+          Kingdom. Tech Expertise Is Highly Valued Globally, Giving You An Edge
+          In Competitive Academic Environments.
+        </p>
+        <button class="bg-[#0057FF] text-white px-8 py-3 rounded-lg shadow-md">
+          Apply Now
+        </button>
+      </div>
+      <div class="lg:w-[45%] flex flex-col items-center">
+        <img src="./Pages/globe.png" alt="" />
+      </div>
+    </div>
+
+    <div class="bg-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="lg:text-4xl text-3xl font-extrabold lg:text-left text-center"
+        >
+          Earn Multiple Globally Recognized Certificates
+        </h2>
+        <p class="mt-4 text-lg text-center lg:text-left lg:w-3/4 leading-8">
+          Upon Completion Of Our Coding Program, You Will Receive Multiple
+          Globally Recognized Certificates That Enhance Your Credentials And
+          Employability.
+          <span class="text-red-500">(Only Applicable To Coding Courses)</span>
+        </p>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg overflow-hidden">
+            <img
+              class="w-full h-48 object-cover"
+              src="./Pages/havard.png"
+              alt="Harvard Certificate"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">
+                Harvard Computer Science Certificate
+              </h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg overflow-hidden">
+            <img
+              class="w-full h-48 object-cover"
+              src="./Pages/helsinkiimage.png"
+              alt="Helsinki Certificate"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">
+                University Of Helsinki Computer Science Certificate
+              </h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg overflow-hidden">
+            <img
+              class="w-full h-48 object-cover"
+              src="./Pages/itskillcenter.png"
+              alt="ITSkillsCenter Certificate"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">ITSkillsCenter Certificate</h3>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-center space-x-4">
+          <button
+            class="bg-[#4475F2] font-bold text-white px-4 py-2 rounded-lg"
+          >
+            Apply Now
+          </button>
+          <button
+            class="bg-[#DFDFE0] font-bold text-[#4475F2] px-8 py-2 rounded-lg"
+          >
+            Talk to program manager
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+
+    <div
+      class="max-w-7xl mx-auto mt-20 mb-20 px-4 lg:px-0 lg:flex justify-between"
+    >
+      <div class="">
+        <h1 class="lg:text-5xl text-3xl font-extrabold lg:leading-[59px] mb-4">
+          Frequently Asked <br class="lg:block hidden" />
+          Questions
+        </h1>
+        <p class="text-zinc-700 font-semibold mb-2">
+          Still Didn’t Find Answers You’re Looking For?
+        </p>
+        <p class="text-zinc-700 font-semibold mb-8">
+          Reach Out To Our Program Manager.
+        </p>
+        <button
+          class="bg-[#DFDFE0] font-bold text-[#4475F2] px-8 py-2 rounded-lg"
+        >
+          Talk to program manager
+        </button>
+      </div>
+
+      <div
+        class="lg:w-1/2 p- lg:mt-0 mt-10"
+        id="accordion-flush"
+        data-accordion="collapse"
+        data-active-classes="bg-white dark:bg-white text-white dark:text-black"
+        data-inactive-classes="text-gray-500 dark:text-gray-400"
+      >
+        <!-- accordion 1 -->
+        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+          <h2 id="accordion-flush-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right gap-3"
+              data-accordion-target="#accordion-flush-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-1"
+            >
+              <span>What kind of courses are offered on this platform?</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0 text-[#4475F2]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-1"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-1"
+          >
+            <div class="py-3">
+              <p class="text-gray-500 dark:text-gray-400">
+                Our tech training programs are designed for individuals with
+                varying backgrounds, from beginners to experienced
+                professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- accordion 2 -->
+        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+          <h2 id="accordion-flush-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-2"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-2"
+            >
+              <span
+                >Are the courses suitable for beginners with no prior tech
+                experience?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0 text-[#4475F2]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-2"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-2"
+          >
+            <div class="py-3">
+              <p class="text-gray-500 dark:text-gray-400">
+                Yes, our instructors are industry experts with extensive
+                experience in their respective fields.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- accordion 3 -->
+        <!--  -->
+
+        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+          <h2 id="accordion-flush-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-3"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-3"
+            >
+              <span
+                >How can these courses help me kickstart a career in the tech
+                industry?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0 text-[#4475F2]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-3"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-3"
+          >
+            <div class="py-3">
+              <p class="text-gray-500 dark:text-gray-400">
+                The hands-on projects included in the programs allow students to
+                apply their learning in real-world scenarios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- accordion 4  -->
+        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+          <h2 id="accordion-flush-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-4"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-4"
+            >
+              <span
+                >Is there any support provided for job placement after
+                completing the courses?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0 text-[#4475F2]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-4"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-4"
+          >
+            <div class="py-3">
+              <p class="text-gray-500 dark:text-gray-400">
+                We offer job placement support to help students secure
+                employment opportunities after completing the program.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- accordion 5 -->
+        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+          <h2 id="accordion-flush-heading-5">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-5"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-5"
+            >
+              <span
+                >Do you provide accommodation for students outside Lagos?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0 text-[#4475F2]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-5"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-5"
+          >
+            <div class="py-3">
+              <p class="text-gray-500 dark:text-gray-400">
+                Yes, we offer accommodation options for students coming from
+                outside Lagos to make their learning experience more convenient.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- accordion 6 -->
+        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+          <h2 id="accordion-flush-heading-6">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-6"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-6"
+            >
+              <span>What tech fields can I choose from in your programs?</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0 text-[#4475F2]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-6"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-6"
+          >
+            <div class="py-5">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Our programs cover a range of tech fields including web
+                development, data analysis, cybersecurity, and more..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-20 mt-20 gradient text-white py-16 px-4 text-center">
+      <h1 class="text-2xl md:text-4xl font-bold mb-4">
+        Ready to Take Charge of Your Future?
+      </h1>
+      <p class="text-lg md:text-lg my-8 lg:w-[80%] mx-auto">
+        Don't wait for opportunities to come to you. Create them with the skills
+        and knowledge you'll gain at our bootcamp. Whether you want to earn
+        more, relocate, or simply find a stable job, tech is the key. Apply Now
+        for our Next Cohort .
+      </p>
+      <button
+        class="orange hover:bg-orange-600 text-white font-semibold py-2 px-10 lg:px-16 rounded"
+      >
+        Apply Now
+      </button>
+    </div>
+
+    <div
+      class="flex max-w-7xl mx-auto flex-col lg:flex-row items-center justify-between lg:items-start bg-white p-3 rounded-lg"
+    >
+      <div class="lg:w-[45%]">
+        <img
+          src="./Pages/womanwithheadphone.png"
+          alt="Person with headphones"
+          class="rounded-lg"
+        />
+      </div>
+      <div class="lg:w-[45%] lg:pl-12 mt-6 lg:mt-0">
+        <h2 class="text-2xl font-extrabold">
+          Take The First Step Toward A Brighter Future. Apply Now!
+        </h2>
+        <p class="mt-2 font-medium text-[#606060]">
+          We Are Here To Assist You On Your Journey To A Tech Career.
+        </p>
+        <div class="mt-6 space-y-10">
+          <div class="flex items-start border-b-2 pb-5 mb-4">
+            <img src="./Pages/location.png" alt="" />
+            <div class="ml-4">
+              <h3 class="text-lg font-bold">Office Address</h3>
+              <p class="text-[#333333]">
+                11 Adekoya Estate, Off College Road, <br />
+                Ogba. Ikeja. Lagos
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start border-b-2 pb-5 mb-4">
+            <img src="./Pages/msg.png" alt="" />
+
+            <div class="ml-4">
+              <h3 class="text-lg font-bold">Email</h3>
+              <p class="">opeyemi@itskillscenter.com</p>
+              <p class="">banji@itskillscenter.com</p>
+            </div>
+          </div>
+          <div class="flex items-start border-b-2 pb-5">
+            <img src="./Pages//tel.png" alt="" />
+
+            <div class="ml-4">
+              <h3 class="text-lg font-bold">PHONE</h3>
+              <p class="">(+234)-811-188-3671</p>
+              <p class="">(+234)-708-000-9967</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="bg-[#00113A] mt-20 text-white py-20 text-center">
+      <h1 class="text-2xl font-bold mb-2">
+        <span class="text-yellow-500">></span> ITSkillsCenter
+      </h1>
+      <p class="mb-6 lg:w-[40%] py-5 font-normal mx-auto">
+        This is where you start your worldwide IT journey. Become proficient in
+        the abilities required to launch a prosperous tech career.
+      </p>
+      <div class="flex justify-center space-x-4 mb-6">
+        <a href="#" aria-label="Facebook" class="bg-white rounded-full p-3">
+          <img src="https://placehold.co/24x24" alt="Facebook" />
+        </a>
+        <a href="#" aria-label="YouTube" class="bg-white rounded-full p-3">
+          <img src="https://placehold.co/24x24" alt="YouTube" />
+        </a>
+        <a href="#" aria-label="WhatsApp" class="bg-white rounded-full p-3">
+          <img src="https://placehold.co/24x24" alt="WhatsApp" />
+        </a>
+        <a href="#" aria-label="Instagram" class="bg-white rounded-full p-3">
+          <img src="https://placehold.co/24x24" alt="Instagram" />
+        </a>
+      </div>
+      <p class="text-sm">© 2024, All Rights Reserved</p>
+    </div>
+
     <script src="./Pages/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
 </html>
