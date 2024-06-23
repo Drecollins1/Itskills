@@ -20,50 +20,14 @@
   </head>
   <body>
     <!-- Mobile header -->
-    <div>
-      <div
-        class="lg:hidden z-50 fixed bg-white w-full flex items-center justify-between p-5"
-      >
-        <img src="./Pages/logo.png" alt="Logo" />
-        <i
-          id="menuOpen"
-          class="fa-solid fa-bars cursor-pointer fa-xl"
-          onclick="toggleMenu()"
-        ></i>
-      </div>
-      <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="fixed z-50 top-0 right-[-100%] h-full w-full bg-[#00113A] shadow-lg transition-transform duration-300"
-      >
-        <i
-          id="menuClose"
-          class="fa-solid text-white fa-xmark cursor-pointer mt-8 pl-5 fa-2xl hidden"
-          onclick="toggleMenu()"
-        ></i>
-        <ul class="p-4">
-          <li>
-            <a href="#" class="block text-2xl py-2 text-[#fff]">Schools</a>
-          </li>
-          <li>
-            <a href="#" class="block text-2xl py-2 text-[#fff]">Testimonials</a>
-          </li>
-          <li><a href="#" class="block text-2xl py-2 text-[#fff]">FAQs</a></li>
-          <li>
-            <a href="#" class="block text-2xl py-2 text-[#fff]">Contact us</a>
-          </li>
-        </ul>
-        <div class="flex flex-col items-center gap-5">
-          <button class="bg-blue-500 w-1/2 text-white px-8 py-2 rounded-md">
-            Get Started
-          </button>
-          <button
-            class="border w-1/2 border-zinc-300 text-white px-4 py-2 rounded-md"
-          >
-            Download Schedule
-          </button>
-        </div>
-      </div>
+
+    <div
+      class="lg:hidden z-50 fixed bg-white w-full flex items-center justify-between p-3"
+    >
+      <img src="./Pages/logo.png" alt="Logo" />
+      <button class="bg-blue-500 text-white px-6 py-2 rounded-md">
+        Apply Now
+      </button>
     </div>
 
     <!-- Desktop navigation -->
@@ -79,7 +43,9 @@
           </div>
         </div>
         <div class="hidden lg:flex items-center space-x-2">
-          <button class="bg-blue-500 text-white px-8 py-2 rounded-md">
+          <button
+            class="bg-[#4475F2] hover:bg-transparent hover:text-[#4475F2] hover:border-2 hover:border-[#4475F2] transition-all duration-500 text-white px-8 py-2 rounded-md"
+          >
             Apply Now
           </button>
         </div>
@@ -135,10 +101,14 @@
         <div
           class="flex lg:flex-row flex-col items-center justify-center space-y-5 lg:space-y-0 lg:space-x-5"
         >
-          <button class="bg-[#4475F2] text-white p-3 px-9 font-bold rounded-lg">
+          <button
+            class="bg-[#4475F2] hover:bg-transparent hover:text-[#4475F2] hover:border-2 hover:border-[#4475F2] transition-all duration-500 text-white px-8 py-2 rounded-md"
+          >
             Apply Now
           </button>
-          <button class="bg-white text-[#4475F2] p-3 px-9 font-bold rounded-lg">
+          <button
+            class="bg-white hover:bg-transparent hover:text-[#4475F2] hover:border-2 hover:border-[#4475F2] transition-all duration-500 text-[#4475F2] p-3 px-9 font-bold rounded-lg"
+          >
             Talk to program manager
           </button>
         </div>
@@ -174,7 +144,11 @@
       class="flex max-w-7xl mx-auto justify-between mt-20 flex-col md:flex-row items-center bg-white"
     >
       <div class="w-full md:w-[40%] mb-5 md:mb-0">
-        <img class="rounded-lg" src="./Pages/answer.png" alt="Classroom" />
+        <img
+          class="rounded-lg transform rotate-0 transition-transform duration-500 hover:rotate-3"
+          src="./Pages/answer.png"
+          alt="Classroom"
+        />
       </div>
       <div class="lg:w-[55%] text-center md:text-left">
         <h2 class="text-3xl font-extrabold mb-5">
@@ -222,7 +196,7 @@
           </li>
         </ul>
         <button
-          class="bg-[#0057FF] font-extrabold text-[#ffffff] p-3 px-9 rounded-lg"
+          class="bg-[#0057FF] hover:bg-transparent hover:text-[#4475F2] hover:border-2 hover:border-[#4475F2] transition-all duration-500 font-extrabold text-[#ffffff] p-3 px-9 rounded-lg"
         >
           Apply Now
         </button>
@@ -404,7 +378,7 @@
         <img
           src="./Pages/joshua.png"
           alt="Joshua Peter"
-          class="w-full h-full object-cover rounded-lg"
+          class="w-full h-full object-cover rounded-lg transform transition-transform duration-300 hover:scale-105"
         />
         <!-- <div
           class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg"
@@ -413,7 +387,9 @@
           <p>TBC USA</p>
         </div> -->
       </div>
-      <div class="relative">
+      <div
+        class="relative transform transition-transform duration-300 hover:scale-105"
+      >
         <img
           src="./Pages/pelumi2.png"
           alt="Pelumi Adefoye"
@@ -426,7 +402,9 @@
           <p>Eduspend</p>
         </div>
       </div>
-      <div class="relative">
+      <div
+        class="relative transform transition-transform duration-300 hover:scale-105"
+      >
         <img
           src="./Pages/nneka.png"
           alt="Ezeoma Nneka"
@@ -439,7 +417,9 @@
           <p>Tarilo</p>
         </div>
       </div>
-      <div class="relative">
+      <div
+        class="relative transform transition-transform duration-300 hover:scale-105"
+      >
         <img
           src="./Pages/samuel2.png"
           alt="Samuel Ortil"
@@ -494,21 +474,27 @@
       <div class="py-6">
         <div id="content-1">
           <div class="container software-components flex gap-12">
-            <div class="software-container">
+            <div
+              class="software-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+            >
               <img class="frontend" src="../../Pages/frontend.png" alt="" />
               <p class="text-2xl font-bold mt-3">Front-End Developer</p>
               <p class="hero-para text-[#606060]">
                 React / NextJS <span class="mx-3">•</span> 3 Months
               </p>
             </div>
-            <div class="software-container">
+            <div
+              class="software-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+            >
               <img class="frontend" src="../../Pages/backend.png" alt="" />
               <p class="text-2xl font-bold mt-3">Back-End Developer</p>
               <p class="hero-para text-[#606060]">
                 Javascript, NodeJS <span class="mx-3">•</span> 3 Months
               </p>
             </div>
-            <div class="software-container">
+            <div
+              class="software-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+            >
               <img class="frontend" src="../../Pages/fullstack.png" alt="" />
               <p class="text-2xl font-bold mt-3">Full-Stack Developer</p>
               <p class="hero-para text-[#606060]">
@@ -529,7 +515,9 @@
           <!--  -->
           <div class="">
             <div class="flex">
-              <div class="container product-container">
+              <div
+                class="container product-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+              >
                 <div class="uiux">
                   <img src="../../Pages/uiux.png" alt="" />
                   <p class="text-2xl font-bold mt-3">UI/UX Design</p>
@@ -538,7 +526,9 @@
                   </p>
                 </div>
               </div>
-              <div class="container product-container">
+              <div
+                class="container product-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+              >
                 <div class="uiux">
                   <img src="../../Pages/softtesting.png" alt="" />
                   <p class="text-2xl font-bold mt-3">Software Testing</p>
@@ -547,7 +537,9 @@
                   </p>
                 </div>
               </div>
-              <div class="container product-container">
+              <div
+                class="container product-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+              >
                 <div class="uiux">
                   <img src="../../Pages/product.png" alt="" />
                   <p class="text-2xl font-bold mt-3">Product Management</p>
@@ -558,7 +550,9 @@
               </div>
             </div>
             <div class="flex mt-10">
-              <div class="container product-container">
+              <div
+                class="container product-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+              >
                 <div class="uiux">
                   <img src="../../Pages/datascience.png" alt="" />
                   <p class="text-2xl font-bold mt-3">Data Science</p>
@@ -567,7 +561,9 @@
                   </p>
                 </div>
               </div>
-              <div class="container product-container">
+              <div
+                class="container product-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+              >
                 <div class="uiux">
                   <img src="../../Pages/cyber.png" alt="" />
                   <p class="text-2xl font-bold mt-3">cybersecurity</p>
@@ -577,7 +573,9 @@
                   </p>
                 </div>
               </div>
-              <div class="container product-container">
+              <div
+                class="container product-container transform rotate-0 transition-transform duration-500 hover:rotate-3"
+              >
                 <div class="uiux">
                   <img src="../../Pages/ai.png" alt="" />
                   <p class="text-2xl font-bold mt-3">AI/ML</p>
@@ -613,7 +611,7 @@
 
           <div class="flex items-center space-x-4">
             <div
-              class="bg-transparent border rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold relative"
+              class="bg-transparent hover:bg-[#ffffff56] transition duration-500 border rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold relative"
             >
               1
             </div>
@@ -624,7 +622,7 @@
           </div>
           <div class="flex items-center space-x-4">
             <div
-              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+              class="bg-transparent border hover:bg-[#ffffff56] transition duration-500 rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
             >
               2
             </div>
@@ -638,7 +636,7 @@
           </div>
           <div class="flex items-center space-x-4">
             <div
-              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+              class="bg-transparent hover:bg-[#ffffff56] transition duration-500 border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
             >
               3
             </div>
@@ -652,7 +650,7 @@
           </div>
           <div class="flex items-center space-x-4">
             <div
-              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+              class="bg-transparent hover:bg-[#ffffff56] transition duration-500 border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
             >
               4
             </div>
@@ -666,7 +664,7 @@
           </div>
           <div class="flex items-center space-x-4">
             <div
-              class="bg-transparent border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
+              class="bg-transparent hover:bg-[#ffffff56] transition duration-500 border rounded-full w-12 p-5 h-12 flex items-center justify-center text-2xl font-bold relative"
             >
               5
             </div>
@@ -738,15 +736,18 @@
         Why Should You Get Into Tech NOW?
       </h2>
 
-      <div class="flex  flex-col lg:flex-row gap-8 mt-10">
+      <div class="flex flex-col lg:flex-row gap-8 mt-10">
         <div
           class="flex lg:w-[60%] lg:border-none border rounded-lg py-4 lg:p-0 border-blue-600 mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
         >
-          <div class="bg-blue-500 text-white p-3 rounded-full">
+          <div
+            class="p-6 bg-[#3088FF] rounded-2xl flex justify-center items-center"
+          >
             <img
+              class="w-8"
               aria-hidden="true"
               alt="money-bag"
-              src="https://placehold.co/24x24"
+              src="./Pages/blue.png"
             />
           </div>
           <div class="w-[90%]">
@@ -760,13 +761,16 @@
           </div>
         </div>
         <div
-          class="flex lg:w-[60%] lg:border-none border rounded-lg p-1 py-4 lg:p-0 border-[#f8b3b8] py-4 justify-between mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
+          class="flex lg:w-[60%] lg:border-none border rounded-lg py-4 lg:p-0 border-[#f8b3b8] justify-between mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
         >
-          <div class="bg-pink-500 text-white p-3 rounded-full">
+          <div
+            class="bg-[#f8b3b8] p-8 rounded-2xl flex justify-center items-center"
+          >
             <img
+              class="w-8"
               aria-hidden="true"
               alt="home"
-              src="https://placehold.co/24x24"
+              src="./Pages/pink.png"
             />
           </div>
           <div>
@@ -780,13 +784,16 @@
       </div>
       <div class="flex flex-col lg:flex-row gap-8 mt-10">
         <div
-          class="flex lg:w-[60%] lg:border-none border rounded-lg p-1 py-4 lg:p-0 border-[#f2c946] mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
+          class="flex lg:w-[60%] lg:border-none border rounded-lg py-4 lg:p-0 border-[#f2c946] mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
         >
-          <div class="bg-yellow-500 text-white p-3 rounded-full">
+          <div
+            class="bg-[#f2c946] p-6 rounded-2xl flex justify-center items-center"
+          >
             <img
+              class="w-12 lg:w-20"
               aria-hidden="true"
               alt="star"
-              src="https://placehold.co/24x24"
+              src="./Pages/yellow2.png"
             />
           </div>
           <div>
@@ -801,14 +808,12 @@
           </div>
         </div>
         <div
-          class="flex  lg:w-[60%] lg:border-none border rounded-lg p-1 py-4 lg:p-0 border-[#9b51e0]  mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
+          class="flex lg:w-[60%] lg:border-none border rounded-lg py-4 lg:p-0 border-[#9b51e0] mx-auto flex-col lg:flex-row items-center text-center space-y-5 lg:space-y-0 lg:text-left lg:items-start lg:space-x-6"
         >
-          <div class="bg-purple-500 text-white p-3 rounded-full">
-            <img
-              aria-hidden="true"
-              alt="globe"
-              src="https://placehold.co/24x24"
-            />
+          <div
+            class="bg-[#9b51e0] p-8 rounded-2xl flex justify-center items-center"
+          >
+            <img aria-hidden="true" alt="globe" src="./Pages/purple.png" />
           </div>
           <div>
             <h3 class="font-bold text-xl lg:text-2xl">Global Opportunities</h3>
@@ -1038,7 +1043,7 @@
         data-inactive-classes="text-gray-500 dark:text-gray-400"
       >
         <!-- accordion 1 -->
-        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+        <div class="mb-5 px-5 pt-3 shadow-lg border rounded-lg">
           <h2 id="accordion-flush-heading-1">
             <button
               type="button"
@@ -1082,7 +1087,7 @@
         </div>
 
         <!-- accordion 2 -->
-        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+        <div class="mb-5 px-5 pt-3 border shadow-lg rounded-lg">
           <h2 id="accordion-flush-heading-2">
             <button
               type="button"
@@ -1129,7 +1134,7 @@
         <!-- accordion 3 -->
         <!--  -->
 
-        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+        <div class="mb-5 px-5 pt-3 border shadow-lg rounded-lg">
           <h2 id="accordion-flush-heading-3">
             <button
               type="button"
@@ -1174,7 +1179,7 @@
           </div>
         </div>
         <!-- accordion 4  -->
-        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+        <div class="mb-5 px-5 pt-3 border shadow-lg rounded-lg">
           <h2 id="accordion-flush-heading-4">
             <button
               type="button"
@@ -1219,7 +1224,7 @@
           </div>
         </div>
         <!-- accordion 5 -->
-        <div class="mb-5 px-5 pt-3 shadow-lg rounded-lg">
+        <div class="mb-5 px-5 pt-3 border shadow-lg rounded-lg">
           <h2 id="accordion-flush-heading-5">
             <button
               type="button"
@@ -1402,7 +1407,6 @@
         >
           <i
             class="fa-solid fa-play border-2 border-[#EB2857] rounded-lg p-2 px-4 w-8 h-8 flex items-center justify-center"
-        
           ></i>
         </a>
         <a
@@ -1415,17 +1419,25 @@
           ></i>
         </a>
         <a
-        href="#"
-        aria-label="Instagram"
-        class="bg-white text-blue-600 flex items-center justify-center rounded-full p-8 w-12 h-12"
-       
-      >
-        <i
-          class="fa-brands fa-instagram rounded-lg p-2 w-8 h-8 flex items-center justify-center"
-          style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white;"
-        ></i>
-      </a>
-      
+          href="#"
+          aria-label="Instagram"
+          class="bg-white text-blue-600 flex items-center justify-center rounded-full p-8 w-12 h-12"
+        >
+          <i
+            class="fa-brands fa-instagram rounded-lg p-2 w-8 h-8 flex items-center justify-center"
+            style="
+              background: linear-gradient(
+                45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%
+              );
+              color: white;
+            "
+          ></i>
+        </a>
       </div>
       <p class="text-sm">© 2024, All Rights Reserved</p>
     </div>
